@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="header">
+        <div class="logo">Currency Converter</div>
+        <div class="current">
+            <app-current-rates 
+                *ngFor="let currencyRate of rates" 
+                [currencyRate]="currencyRate"
+            ></app-current-rates>
+        </div>
+    </div>
+    <div class="content">
+
+    </div>
+</div>

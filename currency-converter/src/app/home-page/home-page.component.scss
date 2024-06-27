@@ -1,0 +1,29 @@
+.container{
+    background-color: rgb(30, 29, 29);
+    display: block;
+
+    .header{
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+
+
+        .logo{
+            font-weight: 700;
+            font-size: 32px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .current{
+            display: flex;
+            gap: 5px;
+        }
+    }
+
+    .content{
+        background-color: #171717;
+        height: 85vh;
+    }
+}
