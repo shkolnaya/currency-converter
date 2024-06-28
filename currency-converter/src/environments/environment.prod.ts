@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiEndoint: "https://v6.exchangerate-api.com/v6/1d33ff1a6529bf0794c50d90",
+    apiEndoint: "https://v6.exchangerate-api.com/v6/84d455b15b617d109af30f2b",
 };

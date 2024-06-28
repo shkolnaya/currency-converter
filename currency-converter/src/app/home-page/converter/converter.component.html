@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="header">Convert currencies in the easiest way:</div>
+    <form [formGroup]="convertForm">
+        <div class="first currency">
+            <mat-form-field appearance="outline">
+                <input matInput type="number" formControlName="firstAmount">
+            </mat-form-field>
+    
+            <mat-form-field appearance="fill" >
+                <mat-label>Currency</mat-label>
+                <mat-select formControlName="firstCurrency">
+                  <mat-option *ngFor="let currency of currencies" [value]="currency">
+                    {{currency}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <mat-icon aria-hidden="false" fontIcon="sync_alt" class="icon"></mat-icon>
+
+        <div class="second currency">
+            <mat-form-field class="target" appearance="outline">
+                <input matInput type="number" formControlName="secondAmount">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" >
+                <mat-label>Currency</mat-label>
+                <mat-select formControlName="secondCurrency">
+                  <mat-option *ngFor="let currency of currencies" [value]="currency">
+                    {{currency}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+
+    </form>
+</div>
