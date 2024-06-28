@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <mat-icon aria-hidden="false" fontIcon="leak_add" class="icon"></mat-icon>
+            Currency Converter
+        </div>
+        <div class="current">
+            <app-current-rates 
+                *ngFor="let currencyRate of rates" 
+                [currencyRate]="currencyRate"
+            ></app-current-rates>
+        </div>
+    </div>
+    <div class="content">
+        <app-converter class="converter"></app-converter>
+    </div>
+    <div class="footer">
+        Please keep in mind that this is a test service. Because of this, you have a limited number of requests per month. To access more, please contact our support team.
+    </div>
+</div>
